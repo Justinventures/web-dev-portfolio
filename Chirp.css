@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar {
+	max-width: 54em;
+	margin: 0 auto;
+}
+/* Underline effect using before and after pseudo-elements */
+.navbar li a:hover {
+  position: relative;
+}
+
+.navbar li a:hover::before,
+.navbar li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500; /* Change this to your desired color */
+}
+
+.navbar li a:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.main-wrapper {
+	padding-top: 1rem;
+	margin: 0 auto;
+	max-width: 53em;
+}
+h1 {
+	width: 95%;
+	letter-spacing: 1px;
+	padding-top: 2rem;
+}
+.perform-text {
+	width: 102%;
+	font-size: 0.85rem;
+}
+.performance-info .highlight {
+	width: 96%;
+}
+.wrapper-img {
+	transform: translateX(13%);
+}
+.card-features {
+	margin-top: 1rem;
+}
+.features-container {
+max-width: 52em;
+margin: 0 auto;
+}
+.features-container .col-lg-6:nth-child(1) p {
+width: 93%;
+font-size: 0.8rem;
+}
+.features-container .col-lg-6:nth-child(2) p {
+	width: 92%;
+	font-size: 0.8rem;
+} 
+.features-container .col-lg-6:nth-child(3) p {
+width: 88%;
+font-size: 0.8rem;
+}
+.features-container .col-lg-6:nth-child(4) p {
+	width: 88%;
+	font-size: 0.8rem;
+}
+.customer-cards {
+	padding: 2rem 4rem;
+}
+h2 {
+	margin-left: 4.5rem;
+}
+.cards-container {
+	max-width: 52em;
+	margin: 0 auto;
+	
+}
+.tweets h5 {
+	font-size: 1.2rem;
+}
+.tweets .tweeter {
+	font-size: 0.9rem;
+	margin-top: -0.5rem;
+	margin-left: 0.5rem;
+}
+.tweets .col-lg-4:nth-child(1) .card-text {
+	width: 90%;
+	font-size: 0.8rem;
+}
+.tweets .col-lg-4:nth-child(2) .card-text {
+	font-size: 0.8rem;
+	width: 91%;
+}
+.tweets .col-lg-4:nth-child(3) .card-text {
+	font-size: 0.8rem;
+	width: 90%;
+}
+.likes {
+	margin-top: -0.9rem;
+}
+.date {
+	margin-left: 4rem;
+}
+.plan_info p {
+	width: 40%;
+	margin: 0 auto;
+}
+.text-list {
+	font-size: 0.85rem;
+}
+.pay_card .trial_button {
+	margin: 0  auto;
+	width: 18rem;
+	font-size: 0.8rem;
+}
+footer .footer-container {
+	margin: 0 auto;
+	max-width: 52em;
+}
+.footer-links li a  {
+	text-decoration: none;
+}
+/* Underline effect using before and after pseudo-elements */
+footer li a:hover {
+  position: relative;
+}
+
+footer li a:hover::before,
+footer li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500; /* Change this to your desired color */
+}
+
+footer li a:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+footer li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .hero-img {
+	  width: 85%;
+	  transform: translateX(-10%);
+  }
+  .performance-info {
+	  margin-left: 2.8rem;
+  }
+  .performance-info h1 {
+	  width: 85%;
+	  font-weight: bold;
+	  word-spacing: 0.5rem;
+	  font-size: 3.2rem;
+  }
+  .perform-text {
+	  width: 90%;
+	  font-size: 1.2rem;
+  }
+  .performance-info .perform-button {
+	font-size: 1.2rem;
+	padding: 1.2rem 0;
+	width: 16.3rem;
+	border-radius: 0.6rem;
+  }
+  .text-info {
+	 margin-left: 4rem;
+	 font-size: 2rem;
+  }
+  .photos img {
+	  width: 7%;
+  }
+  .highlight, .text-info {
+	  font-size: 1.8rem;
+	  width: 20%;
+	  padding: 0;
+	  margin: 0;
+  }
+  .card-features .card {
+	  width: 44rem;
+	  padding: 1rem 0;
+	  margin: 0 auto;
+  }
+  .card-features .card-img-right {
+	  margin-left: 1.2rem;
+  }
+  .card-features .col-lg-6:nth-child(1) .card-text {
+	  width: 96%;
+	  word-spacing: 0.25rem;
+	  font-size: 1.15rem;
+  }
+  .card-features .col-lg-6:nth-child(2) .card-text {
+	  width: 88%;
+	  word-spacing: 0.25rem;
+	   font-size: 1.15rem;
+  }
+  .card-features .col-lg-6:nth-child(3) .card-text {
+	  width: 96.2%;
+	  word-spacing: 0.25rem;
+	   font-size: 1.15rem;
+  }
+  .card-features .col-lg-6:nth-child(4) .card-text {
+	  width: 97%;
+	  word-spacing: 0.25rem;
+	   font-size: 1.15rem;
+  }
+  .customer-names h5 {
+	 font-size: 0.8rem;
+	 padding: 0;
+  }
+  .name-3 {
+	  font-size: 0.5rem;
+	   width: 120%;
+	   padding: 0;
+	   margin-bottom: 0.25rem;
+  }
+  .customer-cards .row {
+	  width: 55rem;
+  }
+  .footer-container {
+	  width: 90%;
+  }
+}
+@media (min-width: 360px) and (max-width: 480px) {
+	.main-wrapper {
+		margin-left: 0.8rem;
+	}
+	h1 {
+		width: 80%;
+	}
+	.perform-text {
+		width: 74%;
+	}
+	.wrapper-img {
+		display: none;
+	}
+	.card-features .card {
+		width: 20rem;
+		margin-left: 0.8rem;
+	}
+	.customer-cards .card {
+		margin-bottom: 1rem;
+	}
+	.name-2 {
+		width: 120%;
+	}
+	.name-3 {
+		width: 120%;
+	}
+	.socio-icon:nth-child(3) {
+		margin-right: 1rem;
+	}
+	 .date_followed .likes{
+	transform: translateY(110%);
+	}
+	.plan_info h3 {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.plan_info p {
+		width: 76%;
+		margin-top: 1rem;
+	}
+	.price_plan .pay_card {
+		width: 88%;
+		margin-left: 1.3rem;
+	}
+	.divider {
+		margin-bottom: 3rem;
+	}
+	.text-list {
+		padding-left: 2rem;
+		transform: translateY(-200%);
+		width: 120%;
+	}
+	.footer-container .row {
+		margin-left: 1rem;
+	}
+}
+
