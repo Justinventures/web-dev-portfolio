@@ -92,7 +92,7 @@ form .form-control-lg {
 }
 .companies {
 	margin-top: 3rem;
-	margin-left: 5rem;
+	max-width: 52em;
 }
 .companies h5 {
 	margin-left: 2rem;
