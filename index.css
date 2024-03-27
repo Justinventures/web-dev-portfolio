@@ -1,0 +1,232 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+	overflow-X: hidden;
+}
+.navbar {
+	width: 100%;
+	max-width: 50em;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+/* Underline effect using before and after pseudo-elements */
+.navbar li a:hover {
+  position: relative;
+}
+
+.navbar li a:hover::before,
+.navbar li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500; /* Change this to your desired color */
+}
+
+.navbar li a:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.main-wrapper h1 {
+	width: 80%;
+	word-spacing: 0.5rem;
+	font-size: 3rem;
+}
+.main-wrapper {
+	max-width: 50em;
+	margin: 0 auto;
+}
+.main-wrapper p {
+	width: 70%;
+	font-size: 1.3rem;
+}
+.companies {
+	margin: 1rem auto;
+	max-width: 49em;
+}
+.logos-container img {
+	margin: 0.3rem;
+}
+.Portfolio-projects {
+	margin: 0 auto;
+	max-width: 48em;
+}
+.portfolio-container .lead {
+	width: 100%;
+}
+.about {
+	transform: translateX(11%);
+	padding: 1.2rem 0;
+}
+.job h2 {
+	width: 120%;
+	padding: 0;
+}
+.quote {
+	transform: translateX(18%);
+}
+.chat {
+	margin: 1rem auto;
+	max-width: 50em;
+}
+.chat p {
+	width: 40%;
+}
+footer .row {
+	transform: translateX(11%);
+	padding: 1.2rem 0;
+}
+.animate__animated {
+  --animate-duration: 5s;
+}
+.pulse-button {
+	-webkit-animation: pulse 1.5s infinite;
+}
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+@media (min-width: 768px) and (max-width: 940px) {
+	.main-wrapper h1 {
+		width: 90%;
+		font-size: 3.2rem;
+	}
+	.main-wrapper p {
+		width: 70%;
+		word-spacing: 0.4rem;
+		font-size: 1.6rem;
+	}
+	.companies {
+		transform: translateX(4%);
+	}
+	.logos-container img {
+		margin: 3rem;
+	}
+	.portfolio-container .row {
+		transform: translateX(4%);
+	}
+	.portfolio-container .row p {
+		width: 88%;
+	}
+	.job {
+		transform: translateX(-10%);
+	}
+	.job p {
+		width: 110%;
+	}
+	.quote {
+		transform: translateX(-14%);
+	}
+	.quote p {
+		width: 150%;
+	}
+}
+@media (max-width: 320px) {
+	.main-wrapper h1 {
+		width: 90%;
+		font-size: 1.5rem;
+	}
+	.main-wrapper p {
+		width: 85%;
+	}
+	.companies {
+		margin-left: 1.2rem;
+	}
+	.logos-container img {
+		margin: 0.2rem;
+	}
+	.portfolio-container .row {
+		transform: translateX(4%);
+	}
+	.portfolio-container .row p {
+		width: 90%;
+		font-size: 0.85rem;
+	}
+	.About-container {
+		transform: translateX(-8%);
+	}
+    .row .job {
+		font-size: 0.8rem;
+		width: 80%;
+	}
+	.row .quote {
+		font-size: 0.8rem;
+		width: 80%;
+		transform: translateX(-1%);
+	}
+	.chat p {
+		width: 90%;
+	}
+}
+@media (min-width: 360px) and (max-width: 480px) {
+	.main-wrapper h1 {
+		width: 110%;
+		font-size: 1.5rem;
+	}
+	.main-wrapper p {
+		width: 75%;
+	}
+	.companies {
+		margin-left: 1.2rem;
+	}
+	.logos-container img {
+		margin: 0.2rem;
+	}
+	.portfolio-container .row {
+		transform: translateX(4%);
+	}
+	.portfolio-container .row p {
+		width: 90%;
+		font-size: 0.85rem;
+	}
+	.About-me {
+	  width: 28rem;
+	}
+	.About-container {
+		transform: translateX(-8%);
+	}
+    .row .job {
+		font-size: 0.8rem;
+		width: 80%;
+	}
+	.row .quote {
+		font-size: 0.8rem;
+		width: 80%;
+		transform: translateX(-1%);
+	}
+	.chat p {
+		width: 90%;
+	}
+	footer {
+		width: 28rem;
+	}
+}
